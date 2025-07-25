@@ -10,6 +10,19 @@ html, body {
     width: 100%;
 }
 
+#crsr {
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    border: 1px solid rgba(255, 255, 255, 0.581);
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
 #loader {
     height: 100%;
     width: 100%;
@@ -103,3 +116,51 @@ html, body {
         opacity: 0;
     }
 } 
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 4.5vw;
+}
+
+#page1 #nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+    font-size: large;
+}
+
+.hero {
+    width: 72%;
+    margin-left: 27%;
+    height: fit-content; /* make fix height for og animation */
+    overflow: hidden; /* hide overflow as well */
+    display: flex;
+    align-items: center;
+}
+
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+
+.hero h1 {
+    font-size: 6.5vw;
+    font-weight: 550;
+    text-transform: uppercase;
+    list-style: 7.2vw;
+}
+
+.hero h3, .hero h2 {
+    font-size: 6.5vw;
+    font-weight: 550;
+    text-transform: uppercase;
+    list-style: 7.2vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+}
